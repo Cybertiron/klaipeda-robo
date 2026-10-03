@@ -1,0 +1,60 @@
+FONTLOG for Klaipeda Robo
+=========================
+
+This file provides detailed information on the Klaipeda Robo font software.
+This information should be distributed along with the Klaipeda Robo fonts and
+any derivative works.
+
+
+Basic Font Information
+----------------------
+
+Klaipeda Robo is the display typeface of KU Robotics Club (Klaipėda University
+Robotics Club, Lithuania). It is a derivative of Chakra Petch (Bold and
+SemiBold) by Cadson Demak / The Chakra Petch Project Authors.
+
+Two families are provided:
+
+* Klaipeda Robo: the first letter O / o of every word is automatically
+  replaced by the club's "robot eye": a red ring with two antennas on top.
+  All other letters are unchanged.
+
+* Klaipeda Robo Color: the first O / o of a word is the robot eye; every
+  following O / o in the same word gets antennas in rotating colours
+  (yellow, blue, green).
+
+The replacement is done with OpenType contextual substitution (features
+"calt" and "rlig", so it also works when letter-spacing is applied).
+Colours are stored in the font (COLR v0 / CPAL). Applications without colour
+font support show a single-colour outline of the same shapes.
+
+The eye glyphs can also be typed directly:
+  U+E000  uppercase eye
+  U+E001  lowercase eye
+
+Supports Latin including all Lithuanian letters (inherited from Chakra Petch).
+
+
+ChangeLog
+---------
+
+2026-10-04 (KU Robotics Club) Klaipeda Robo v1.000
+- Initial release, derived from Chakra Petch Bold and SemiBold.
+- Added glyphs: O.eye, o.eye (+ colour layers), O.ant, o.ant, O.v1-v3, o.v1-v3.
+- Added contextual substitution lookups (calt, rlig); original features of
+  Chakra Petch (kern, liga, ccmp, locl, mark, ...) are preserved.
+- Added COLR/CPAL colour tables.
+- Renamed to "Klaipeda Robo" / "Klaipeda Robo Color" (Chakra Petch has no
+  Reserved Font Name).
+
+
+Acknowledgements
+----------------
+
+N: Cadson Demak / The Chakra Petch Project Authors
+W: https://github.com/cadsondemak/Chakra-Petch
+D: Original design of Chakra Petch
+
+N: KU Robotics Club
+W: https://kurobotics.club
+D: Robot eye glyphs, contextual rules, colour version
